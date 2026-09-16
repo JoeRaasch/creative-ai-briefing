@@ -5,83 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Joe's Creative AI Briefing</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 48px 24px;
-      line-height: 1.6;
-      background: #f5f5f3;
-      color: #1f2328;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .subtitle {
-      color: #666;
-      margin-bottom: 3rem;
-    }
-
-    .latest {
-      background: white;
-      padding: 28px;
-      border-radius: 16px;
-      margin-bottom: 32px;
-    }
-
-    a {
-      color: #245f73;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .archive {
-      background: white;
-      padding: 28px;
-      border-radius: 16px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
+    :root{--bg:#f4f1ea;--paper:#fffdf8;--ink:#171a1f;--muted:#66707a;--line:#d8d3c8;--accent:#b25d2a;--accent2:#325a6b;--chip:#eee8de}
+    @media (prefers-color-scheme:dark){:root{--bg:#111315;--paper:#191c1f;--ink:#f1eee7;--muted:#a9b0b6;--line:#33383d;--accent:#e08851;--accent2:#79a9bb;--chip:#24282c}}
+    *{box-sizing:border-box} body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:940px;margin:0 auto;padding:54px 24px 70px;line-height:1.6;background:var(--bg);color:var(--ink)}
+    h1,h2,h3{font-family:Georgia,"Times New Roman",serif} h1{font-size:clamp(42px,7vw,70px);line-height:.98;letter-spacing:-.04em;margin:0 0 16px}.subtitle{color:var(--muted);font-size:18px;margin:0 0 36px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.13em;color:var(--accent);font-weight:800;margin-bottom:10px}.latest,.archive{background:var(--paper);border:1px solid var(--line);padding:30px;border-radius:22px;margin-bottom:24px}.latest h2,.archive h2{margin-top:0}.latest h3{font-size:28px;margin:.3rem 0 .7rem}a{color:var(--accent2);font-weight:700;text-decoration:none}a:hover{text-decoration:underline}.archive ul{padding-left:20px;margin-bottom:0}.archive li{margin:.45rem 0}.footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   </style>
 </head>
 <body>
-
+  <div class="eyebrow">Creative AI · VFX · Animation · Games · Teaching · Tech</div>
   <h1>Joe's Creative AI Briefing</h1>
-  <p class="subtitle">
-    AI, VFX, animation, creative tools, technology, education, and industry news.
-  </p>
+  <p class="subtitle">A daily working-artist briefing focused on tools, workflows, releases, teaching, industry shifts and the things actually worth testing.</p>
 
   <section class="latest">
-    <h2>Latest Briefing</h2>
+    <h2>Latest briefing</h2>
     <h3>September 16, 2026</h3>
-    <p>
-      FastH3, Canva ProSuite, Autodesk AI production workflows,
-      creative-model benchmarking, and more.
-    </p>
-
-    <p>
-      <a href="/issues/2026-09-16/">Read today's briefing →</a>
-    </p>
+    <p>FastH3, Canva ProSuite, Autodesk AI production workflows, creative-model benchmarking, camera-pipeline AI, and more.</p>
+    <p><a href="/issues/2026-09-16/">Read today's briefing →</a></p>
   </section>
 
   <section class="archive">
     <h2>Archive</h2>
     <ul>
-      <li>
-        <a href="/issues/2026-09-16/">
-          September 16, 2026
-        </a>
-      </li>
+      <li><a href="/issues/2026-09-16/">September 16, 2026</a></li>
     </ul>
   </section>
 
+  <div class="footer"><span>Joe's Creative AI Briefing</span><span>Published automatically via GitHub</span></div>
 </body>
 </html>
