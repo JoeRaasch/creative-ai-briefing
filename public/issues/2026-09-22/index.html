@@ -27,14 +27,23 @@
   <header class="hero">
     <div class="eyebrow">Creative AI · VFX · Games · Teaching · Tech</div>
     <h1>Five things worth your attention today.</h1>
-    <p class="deck">A working-artist briefing on open models, 3D worlds, animation tooling, shared GPU infrastructure and teaching resources, with promotional claims separated from what is independently established.</p>
+    <p class="deck">A working-artist briefing on studio consolidation, open models, 3D worlds, animation tooling and shared GPU infrastructure, with confirmed terms separated from forecasts and promotional claims.</p>
     <div class="meta"><span class="pill">5 main stories</span><span class="pill">3 quick links</span><span class="pill">Local / open AI prioritized</span><span class="pill">Verified 22 Sep 2026</span></div>
   </header>
 
   <div class="section-head"><h2>Today’s five</h2><p>High-value developments, ordered by relevance.</p></div>
 
   <article class="story">
-    <div class="num">01 · Open models / agents</div>
+    <div class="num">01 · Entertainment business</div>
+    <h3>Paramount clears the final legal hurdle to acquire Warner Bros. Discovery.</h3>
+    <p>Paramount Skydance has completed its roughly $110 billion acquisition of Warner Bros. Discovery after settling the remaining state antitrust challenges. The settlement requires the combined company to release at least 30 theatrical films a year for five years, invest an additional $300 million annually in U.S. film production, keep the Paramount and Warner Bros. studio lots in California for at least five years, and maintain independent editorial boards for CNN and CBS.</p>
+    <p>The merger still reduces the number of major Hollywood buyers under separate ownership. The Writers Guild and other critics have warned that consolidation can weaken competition for creative labor and reduce job opportunities, although the production and theatrical-release commitments are intended to limit some of that risk.</p>
+    <div class="why"><strong>Why it matters</strong>For VFX, animation and game-adjacent production, the concern is not simply corporate ownership: fewer independent buyers can mean fewer separately financed slates, less competition for projects and crews, and more centralized decisions about what gets made. The settlement’s minimum-output requirements are a meaningful counterweight, so any claim that production will definitely fall should be treated as a risk rather than a settled outcome.</div>
+    <div class="source-row"><a class="source" href="https://www.reuters.com/legal/litigation/paramount-settles-with-california-other-states-clearing-major-hurdle-warner-bros-2026-09-21/" target="_blank" rel="noreferrer">Reuters</a><a class="source" href="https://au.variety.com/2026/film/global/paramount-states-settlement-terms-warner-bros-40562/" target="_blank" rel="noreferrer">Variety settlement terms</a></div>
+  </article>
+
+  <article class="story">
+    <div class="num">02 · Open models / agents</div>
     <h3>Xiaomi releases MiMo-V2.6 as an MIT-licensed omnimodal agent model.</h3>
     <p>Xiaomi’s MiMo-V2.6-Pro-RL accepts text, images, video and audio, carries a one-million-token context window, and uses a sparse mixture-of-experts backbone with 1.02 trillion total parameters and 42 billion active per token. The weights are published under the MIT licence, with official SGLang and vLLM serving recipes.</p>
     <p>Xiaomi reports large gains on coding and agent benchmarks, and Artificial Analysis currently places Pro at the top end of its open-weight index. The model is not a casual workstation install: Xiaomi’s reference deployment uses eight-way tensor parallelism in vLLM or a 16-way, two-node SGLang configuration.</p>
@@ -43,7 +52,7 @@
   </article>
 
   <article class="story">
-    <div class="num">02 · 3D / game development</div>
+    <div class="num">03 · 3D / game development</div>
     <h3>Meshy’s Mora prototype separates world logic, 3D structure and video rendering.</h3>
     <p>Meshy has detailed Mora, an early research architecture in which coding agents handle game logic, Meshy’s 3D generation supplies assets and spatial structure, and a real-time video model renders the final imagery and audio. Mora 1 is publicly playable, but Meshy describes a general-purpose world-creation tool as a longer-term goal.</p>
     <p>The announcement also expands on Meshy 7.1, released September 16: its paid Ultra 4K mode generates geometry on a 4096³ voxel grid, with raw meshes reaching up to 80 million triangles before simplification. Meshy’s detail-quality comparisons come from its own benchmark and should be read as vendor results.</p>
@@ -52,7 +61,7 @@
   </article>
 
   <article class="story">
-    <div class="num">03 · Animation / MCP</div>
+    <div class="num">04 · Animation / MCP</div>
     <h3>Toonkit exposes animation canvases and saved assets through MCP.</h3>
     <p>Toonkit’s September 18 update, documented on September 21, lets ChatGPT and Claude call its image, video and long-form animation tools through MCP. The integration can drive Toonkit Canvas and pull in saved characters, backgrounds and props instead of regenerating every shot as an isolated asset.</p>
     <p>The service remains a hosted, credit-based production tool; MCP adds an agent interface rather than a local model runtime.</p>
@@ -61,21 +70,12 @@
   </article>
 
   <article class="story">
-    <div class="num">04 · Multi-GPU video inference</div>
+    <div class="num">05 · Multi-GPU video inference</div>
     <h3>NVIDIA turns multi-GPU video inference into a single serving endpoint.</h3>
     <p>TensorRT 11 multi-device inference is now supported through NVIDIA Dynamo-Triton 26.07, allowing one served model instance to own several GPUs behind a single gRPC endpoint. NVIDIA demonstrates the setup with Cosmos 3 Nano video generation, using Ulysses context parallelism across as many as eight GPUs while Diffusers handles the surrounding pipeline.</p>
     <p>In NVIDIA’s 1280×720, 189-frame test at 35 denoising steps, end-to-end latency fell from 156.6 seconds on one GPU to 34.2 seconds on eight GPUs. Transformer time scaled faster than the rest of the pipeline, so total speedup was 4.58× rather than linear.</p>
     <div class="why"><strong>Why it matters</strong>For a lab or studio with several GPUs, this removes some of the engineering needed to expose distributed generation as a service that artists or tools can call. It is infrastructure for shared on-prem compute, not a consumer-desktop optimization.</div>
     <div class="source-row"><a class="source" href="https://developer.nvidia.com/blog/simplifying-model-serving-across-multiple-gpus-with-nvidia-tensorrt-multi-device-integration-in-nvidia-dynamo-triton/" target="_blank" rel="noreferrer">NVIDIA technical blog</a></div>
-  </article>
-
-  <article class="story">
-    <div class="num">05 · Higher education</div>
-    <h3>OpenAI Academy adds separate courses for educators and college students.</h3>
-    <p>OpenAI has expanded Academy with role-based paths for developers, leaders, educators and college students. The educator course covers class planning, activities, assessment and student communication; the student course focuses on study planning, group projects, draft review and career preparation.</p>
-    <p>Courses include assessments and badges, and institutions can combine them with OpenAI’s AI Foundations material and deployment guide. The content is built around ChatGPT, so it is vendor-specific training rather than a neutral AI-literacy curriculum.</p>
-    <div class="why"><strong>Why it matters</strong>For faculty, the practical value is in the ready-made exercises and review checkpoints, especially as something to compare with local curriculum. It can supplement broader AI-literacy teaching, but it does not replace discipline-specific work on production practice, sourcing, model limits and assessment.</div>
-    <div class="source-row"><a class="source" href="https://openai.com/index/expanding-openai-academy-with-new-learning-paths/" target="_blank" rel="noreferrer">OpenAI Academy announcement</a></div>
   </article>
 
   <div class="section-head"><h2>Also worth your time</h2><p>Smaller releases and deadlines that fit the same radar.</p></div>
